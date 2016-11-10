@@ -8,8 +8,8 @@ namespace proyecto
     class Nota_Credito
     {
         //Atributos
-        private Persona remitente; //vendedor,empresa
-        private Persona destinatario; //cliente,usuario,empresa
+        private string remitente; //vendedor,empresa
+        private string destinatario; //cliente,usuario,empresa
         private double monto;
         private string detalle; //detalle de la informacion para el destinatario.
         private DateTime fecha; // fecha de expedicion.
@@ -18,7 +18,7 @@ namespace proyecto
 
 
         //Metodos
-        public Nota_Credito(Persona r,Persona d,double m,string detall,DateTime f)
+        public Nota_Credito(string r,string d,double m,string detall,DateTime f)
         {
             this.Remitente = r;
             this.Destinatario = d;
@@ -26,7 +26,7 @@ namespace proyecto
             this.Detalle = detall;
             this.Fecha = f;
         }
-        public Persona Remitente
+        public string Remitente
         {
             get
             {
@@ -39,7 +39,7 @@ namespace proyecto
             }
         }
 
-        public Persona Destinatario
+        public string Destinatario
         {
             get
             {

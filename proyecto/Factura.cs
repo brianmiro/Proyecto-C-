@@ -8,8 +8,8 @@ namespace proyecto
     class Factura
     {
        //Atributos
-       private Persona remitente;
-       private Persona destinatario;
+       private string remitente;
+       private string destinatario;
        private double monto;
        private DateTime fecha;  //en la que se genera un mov. de pago o cobro
 
@@ -18,7 +18,7 @@ namespace proyecto
         public Factura()
         {
         }
-        public Factura(Persona r,Persona d,double m,DateTime f)
+        public Factura(string r,string d,double m,DateTime f)
         {
             this.Destinatario = d;
             this.Remitente = r;
@@ -27,13 +27,13 @@ namespace proyecto
         }
 
         //Metodos
-        public Persona Remitente
+        public string Remitente
         {
             get { return remitente; }
             set { remitente = value;}
         }
 
-        public Persona Destinatario
+        public string Destinatario
         {
             get{return destinatario;}
             set{ destinatario = value; }
