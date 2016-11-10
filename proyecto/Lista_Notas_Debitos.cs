@@ -6,7 +6,7 @@ using System.IO;
 
 namespace proyecto
 {
-    class Lista_Facturas_Debito
+    class Lista_Notas_Debitos
     {
         private FileStream fs;
         private BinaryWriter bw;
@@ -15,7 +15,7 @@ namespace proyecto
         private int tamañoReg=200;
         //private bool regEliminado = false;
 
-        public Lista_Facturas_Debito(string fichero)
+        public Lista_Notas_Debitos(string fichero)
         {
             if (Directory.Exists(fichero))
                 throw new IOException(Path.GetFileName(fichero)+"no es un fichero");

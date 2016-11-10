@@ -44,11 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factura.cs" />
-    <Compile Include="Lista_Facturas_Debito.cs" />
+    <Compile Include="Lista_Facturas.cs" />
+    <Compile Include="Lista_Notas_Credito.cs" />
+    <Compile Include="Lista_Notas_Debitos.cs" />
     <Compile Include="Movimiento_Reurrente.cs" />
     <Compile Include="Nota_Credito.cs" />
     <Compile Include="Nota_Debito.cs" />
-    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

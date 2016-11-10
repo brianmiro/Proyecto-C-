@@ -10,7 +10,7 @@ namespace proyecto
         static void Main(string[] args)
         {
             string fichero = "D:/prueba/listaDebitos.txt";
-            Lista_Facturas_Debito debito = new Lista_Facturas_Debito(fichero);
+            Lista_Notas_Debitos debito = new Lista_Notas_Debitos(fichero);
 
             Nota_Debito factura = new Nota_Debito(" guillermo "," pablo ", 3000 ,"fragil producto","12/12/2016");
 
