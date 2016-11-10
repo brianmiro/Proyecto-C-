@@ -1,0 +1,4 @@
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\bin\Debug\proyecto.exe
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\bin\Debug\proyecto.pdb
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\obj\x86\Debug\proyecto.exe
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\obj\x86\Debug\proyecto.pdb
