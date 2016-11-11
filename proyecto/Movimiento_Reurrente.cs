@@ -11,12 +11,12 @@ namespace proyecto
         {
             //Atributos
             private double monto;
-            private DateTime fecha_inicio;
+            private string fecha_inicio;
             private int frecuencia_facturacion; //cantidad de dias en que se realiza la facturacion
 
 
             //Metodos
-            public Movimiento_Recurrente(double m, DateTime f, int frec)
+            public Movimiento_Recurrente(double m, string f, int frec)
             {
                 this.Monto = m;
                 this.Frecuencia_facturacion = frec;
@@ -35,7 +35,7 @@ namespace proyecto
                 }
             }
 
-            public DateTime Fecha_inicio
+            public string Fecha_inicio
             {
                 get
                 {
