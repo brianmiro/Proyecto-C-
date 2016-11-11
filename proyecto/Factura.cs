@@ -50,6 +50,10 @@ namespace proyecto
             get { return fecha; }
             set { fecha = value;}
         }
+        public int Tamaño 
+		{
+			get{return remitente.Length*2+destinatario.Length*2+Fecha.Length*2;}
+		}
     }
  }
 
