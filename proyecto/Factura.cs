@@ -11,14 +11,14 @@ namespace proyecto
        private string remitente;
        private string destinatario;
        private double monto;
-       private DateTime fecha;  //en la que se genera un mov. de pago o cobro
+       private string fecha;  //en la que se genera un mov. de pago o cobro
 
        
 
         public Factura()
         {
         }
-        public Factura(string r,string d,double m,DateTime f)
+        public Factura(string r,string d,double m,string f)
         {
             this.Destinatario = d;
             this.Remitente = r;
@@ -45,7 +45,7 @@ namespace proyecto
             set { monto = value; }
         }
 
-        public DateTime Fecha
+        public string Fecha
         {
             get { return fecha; }
             set { fecha = value;}
