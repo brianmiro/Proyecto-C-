@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace proyecto
 {
@@ -40,7 +41,7 @@ namespace proyecto
         {
             if (i >= 0 && i <= nregistro)
             {
-                if (debito.Tamaño + 8 < tamañoReg)
+                if (factura.Tamaño + 8 < tamañoReg)
                 {
                     bw.BaseStream.Seek(i * tamañoReg, SeekOrigin.Begin);
                     bw.Write(factura.Remitente);
@@ -56,15 +57,15 @@ namespace proyecto
             return false;
         }
 
-        public void AñadirRegistro(Nota_Debito debito)
+        public void AñadirRegistro(Factura factura)
         {
-            if (EscribirReg(nregistro, debito))
+            if (EscribirReg(nregistro, factura))
             {
                 nregistro++;
             }
         }
 
-        public Nota_Debito LeerRegistro(int i)
+        public Factura LeerRegistro(int i)
         {
             if (i >= 0 && i <= nregistro)
             {
@@ -77,7 +78,7 @@ namespace proyecto
                 string detalles = br.ReadString();
                 string fecha = br.ReadString();
 
-                return new Nota_Debito(remitente, destinatario, costo, detalles, fecha);
+                return new Factura(remitente, destinatario, costo, detalles, fecha);
             }
             else
             {
@@ -88,4 +89,4 @@ namespace proyecto
 
     }
     }
-}
+

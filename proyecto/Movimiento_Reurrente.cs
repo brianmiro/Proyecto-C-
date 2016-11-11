@@ -62,7 +62,7 @@ namespace proyecto
                 }
             }
             
-            public int Plazo()
+            public int Plazo
             {
                 get
                 {
@@ -75,7 +75,8 @@ namespace proyecto
             }
             public int Tamaño 
 		    {
-			    get{return Fecha_Inicio.Length*2;}
+			   get{ return int.Parse(Fecha_inicio)*2;
+                        ;}
 		    }
         }
     }

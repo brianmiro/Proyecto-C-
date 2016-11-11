@@ -12,18 +12,20 @@ namespace proyecto
        private string destinatario;
        private double monto;
        private string fecha;  //en la que se genera un mov. de pago o cobro
+        private string detalle;
 
        
 
         public Factura()
         {
         }
-        public Factura(string r,string d,double m,string f)
+        public Factura(string r,string d,double m,string f,string detall)
         {
             this.Destinatario = d;
             this.Remitente = r;
             this.Monto = m;
             this.Fecha = f;
+            this.Detalle = detall;
         }
 
         //Metodos
@@ -54,6 +56,19 @@ namespace proyecto
 		{
 			get{return remitente.Length*2+destinatario.Length*2+Fecha.Length*2;}
 		}
+
+        public string Detalle
+        {
+            get
+            {
+                return detalle;
+            }
+
+            set
+            {
+                detalle = value;
+            }
+        }
     }
  }
 
