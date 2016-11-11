@@ -12,13 +12,13 @@ namespace proyecto
         private string destinatario; //cliente,usuario,empresa
         private double monto;
         private string detalle; //detalle de la informacion para el destinatario.
-        private DateTime fecha; // fecha de expedicion.
+        private string fecha; // fecha de expedicion.
 
    
 
 
         //Metodos
-        public Nota_Credito(string r,string d,double m,string detall,DateTime f)
+        public Nota_Credito(string r,string d,double m,string detall,string f)
         {
             this.Remitente = r;
             this.Destinatario = d;
@@ -79,7 +79,7 @@ namespace proyecto
             }
         }
 
-        public DateTime Fecha
+        public string Fecha
         {
             get
             {
@@ -91,5 +91,9 @@ namespace proyecto
                 fecha = value;
             }
         }
+        public int Tamaño 
+		{
+			get{return remitente.Length*2+destinatario.Length*2+Detalle.Length*2+Fecha.Length*2;}
+		}
     }
 }
