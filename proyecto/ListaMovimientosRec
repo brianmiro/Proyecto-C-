@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace proyecto
+{
+    class Lista_Movimientos_Recurrentes
+    {
+        private FileStream fs;
+        private BinaryWriter bw;
+        private BinaryReader br;
+        private int nregistro;
+        private int tamañoReg=200;
+        //private bool regEliminado = false;
+
+        public Lista_Facturas(string fichero)
+        {
+            if (Directory.Exists(fichero))
+                throw new IOException(Path.GetFileName(fichero)+"no es un fichero");
+            fs = new FileStream(fichero,FileMode.OpenOrCreate,FileAccess.ReadWrite);
+            bw = new BinaryWriter(fs);
+            br = new BinaryReader(fs);
+            nregistro = (int)Math.Ceiling((double)fs.Length/(double)tamañoReg);
+        }
+
+        public void CerrarFichero()
+        {
+            bw.Close();
+            br.Close();
+            fs.Close();
+        }
+
+        public int NumeroRegistro()
+        {
+            return nregistro;
+        }
+
+        public bool EscribirReg(int i,Movimiento_Recurrente recurrente)
+        {
+            if (i >= 0 && i <= nregistro)
+            {
+                if (debito.Tamaño + 8 < tamañoReg)
+                {
+                    bw.BaseStream.Seek(i * tamañoReg, SeekOrigin.Begin);
+                    bw.Write(recurrete.Monto);
+                    bw.Write(recurrente.Fecha_Inicio);
+                    bw.Write(recurrente.Frecuencia_Facturacion);
+                    bw.Write(recurrente.Plazo);
+                }
+                else Console.WriteLine("tamaño excedido del registro");
+            }
+            else Console.WriteLine("numero de registro fuera de limites");
+
+            return false;
+        }
+
+        public void AñadirRegistro(Nota_Debito debito)
+        {
+            if (EscribirReg(nregistro, debito))
+            {
+                nregistro++;
+            }
+        }
+
+        public Movimiento_Recurrente LeerRegistro(int i)
+        {
+            if (i >= 0 && i <= nregistro)
+            {
+                //Situar el puntero de L/E
+                br.BaseStream.Seek(i * tamañoReg, SeekOrigin.Begin);
+                // toma lo datos
+                double costo = br.ReadDouble();
+                string fecha = br.ReadString();
+                int fecuencia = br.ReadString();
+                int plazo = br.ReadString();
+
+                return new Nota_Debito(costo, fecha , frecuencia , plazo );
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+    }
+    }
+}
