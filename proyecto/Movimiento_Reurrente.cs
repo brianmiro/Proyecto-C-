@@ -72,7 +72,11 @@ namespace proyecto
                 {
                     plazo = value;
                 }
-            }    
+            }
+            public int Tamaño 
+		    {
+			    get{return Fecha_Inicio.Length*2;}
+		    }
         }
     }
 }
