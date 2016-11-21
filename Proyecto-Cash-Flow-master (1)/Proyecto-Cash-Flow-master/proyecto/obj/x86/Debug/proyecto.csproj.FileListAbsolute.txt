@@ -1,0 +1,13 @@
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\bin\Debug\proyecto.exe
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\bin\Debug\proyecto.pdb
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\obj\x86\Debug\proyecto.exe
+c:\users\edmundo\documents\visual studio 2010\Projects\cashflow2\proyecto\obj\x86\Debug\proyecto.pdb
+C:\Users\Brian\Documents\GitHub\Proyecto-Cash-Flow\proyecto\obj\x86\Debug\proyecto.exe
+C:\Users\Brian\Documents\GitHub\Proyecto-Cash-Flow\proyecto\obj\x86\Debug\proyecto.pdb
+C:\Users\Brian\Documents\GitHub\Proyecto-Cash-Flow\proyecto\obj\x86\Debug\proyecto.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Documents\GitHub\Proyecto-Cash-Flow\proyecto\bin\Debug\proyecto.exe
+C:\Users\Brian\Documents\GitHub\Proyecto-Cash-Flow\proyecto\bin\Debug\proyecto.pdb
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\proyecto\bin\Debug\proyecto.exe
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\proyecto\bin\Debug\proyecto.pdb
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\proyecto\obj\x86\Debug\proyecto.exe
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\proyecto\obj\x86\Debug\proyecto.pdb

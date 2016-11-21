@@ -1,0 +1,7 @@
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\WebApp\bin\WebApp.dll
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\WebApp\bin\WebApp.pdb
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\WebApp\bin\proyecto.exe
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\WebApp\bin\proyecto.pdb
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\WebApp\obj\Debug\WebApp.csprojResolveAssemblyReference.cache
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\WebApp\obj\Debug\WebApp.dll
+C:\Users\Edmundo\Downloads\Proyecto-Cash-Flow-master (1)\Proyecto-Cash-Flow-master\WebApp\obj\Debug\WebApp.pdb
