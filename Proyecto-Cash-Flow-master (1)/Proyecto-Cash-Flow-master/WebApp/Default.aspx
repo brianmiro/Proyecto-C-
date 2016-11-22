@@ -4,7 +4,7 @@
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <asp:Label ID="lblTexto" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="lblTexto" runat="server" Text="CASH FLOW"></asp:Label>
     <asp:GridView ID="GridView1"
         runat="server" AutoGenerateColumns="False" CellPadding="4" 
         ForeColor="#333333" GridLines="None">

@@ -6,7 +6,7 @@ using System.IO;
 
 namespace proyecto
 {
-    class Lista_Facturas
+    public class Lista_Facturas
     {
          private FileStream fs;
         private BinaryWriter bw;

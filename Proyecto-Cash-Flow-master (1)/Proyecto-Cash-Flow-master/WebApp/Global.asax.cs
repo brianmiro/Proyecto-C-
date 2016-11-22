@@ -16,13 +16,26 @@ namespace WebApp
         {
             // Código que se ejecuta al iniciarse la aplicación
             //verificar si el archivo existe sino q lo cree vacio
-
+            //nota de debitos
             var dir = Server.MapPath("/Data");
             var file = Path.Combine(dir, ConfigurationManager.AppSettings["FileDebito"]);
-
+            //nota de credito
+            var dirC = Server.MapPath("/Data");
+            var fileC = Path.Combine(dir, ConfigurationManager.AppSettings["FileCredito"]);
+            //movimiento recurrente
+            var dirR = Server.MapPath("/Data");
+            var fileR = Path.Combine(dir, ConfigurationManager.AppSettings["FileRecurrente"]);
+            //Faturas
+            var dirF = Server.MapPath("/Data");
+            var fileF = Path.Combine(dir, ConfigurationManager.AppSettings["FileFactura"]);
+            
             if(!File.Exists(file)) {
 
                 using (File.Create(file));
+                using(File.Create(fileC));
+                using(File.Create(fileR));
+                using(File.Create(fileF));
+
             }
         }
 

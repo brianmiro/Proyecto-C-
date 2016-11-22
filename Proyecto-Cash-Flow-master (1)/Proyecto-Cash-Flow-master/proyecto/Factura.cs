@@ -5,7 +5,7 @@ using System.Text;
 
 namespace proyecto
 {
-    class Factura
+   public class Factura
     {
        //Atributos
        private string remitente;

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace proyecto
 {
-    class Nota_Credito
+    public class Nota_Credito
     {
         //Atributos
         private string remitente; //vendedor,empresa

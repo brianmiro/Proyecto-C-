@@ -5,7 +5,7 @@ using System.Text;
 
 namespace proyecto
 {
-    class Movimiento_Recurrentes
+    public class Movimiento_Recurrentes
     {
             //Atributos
             private double monto;

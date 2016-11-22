@@ -46,6 +46,8 @@ namespace WebApp
                     debito = new Lista_Notas_Debitos(file);
 
                     var l = new List<Nota_Debito>();
+
+
                     for (var i = 0; i < debito.NumeroRegistro(); i++)
                     { 
                         Nota_Debito facturaMuestra = debito.LeerRegistro(i);

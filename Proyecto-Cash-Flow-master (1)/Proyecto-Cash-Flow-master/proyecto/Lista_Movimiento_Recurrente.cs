@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 namespace proyecto
 {
-    class Lista_Movimiento_Recurrente
+ public class Lista_Movimiento_Recurrente
     {
         private FileStream fs;
         private BinaryWriter bw;
